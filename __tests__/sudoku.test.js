@@ -22,6 +22,6 @@ describe('Sudoku', () => {
   });
 
   test('should correctly return false if the numbers 1-9 are not all present in a given row', () => {
-    expect(incorrectSudoku.checkRow()).toEqual(false);
+    expect(reusableIncorrectSudoku.checkRow()).toEqual(false);
   });
 });
