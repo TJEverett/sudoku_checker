@@ -19,5 +19,16 @@ Sudoku.prototype.checkRow = function(rowNumber){
 }
 
 Sudoku.prototype.checkColumn = function(rowNumber){
-  return false;
+  let numberCheck = [false, false, false, false, false, false, false, false, false];
+  let placeHolder = 10;
+  for (let a = 0; a <= 8 && a < this.puzzle[rowNumber].length; a++) {
+    placeHolder = this.puzzle[a][rowNumber] - 1;
+    numberCheck[placeHolder] = true;
+  }
+  for (let b = 0; b <= 8; b++) {
+    if (numberCheck[b] === false) {
+      return false;
+    }
+  }
+  return true;
 }
