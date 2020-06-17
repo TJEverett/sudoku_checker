@@ -17,3 +17,7 @@ Sudoku.prototype.checkRow = function(rowNumber){
   }
   return true;
 }
+
+Sudoku.prototype.checkColumn = function(rowNumber){
+  return false;
+}
