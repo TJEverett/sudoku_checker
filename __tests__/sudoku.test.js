@@ -28,4 +28,8 @@ describe('Sudoku', () => {
   test('should correctly return true is the numbers 1-9 are all present in a given row', () => {
     expect(reusableCorrectSudoku.checkRow(0)).toEqual(true);
   });
+
+  test('should correctly return false if the numbers 1-9 are not all present in a given column', () => {
+    expect(reusableIncorrectSudoku.checkColumn(0)).toEqual(false);
+  });
 });
