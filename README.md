@@ -6,7 +6,7 @@
 
 ## Description
 
-
+This project was an attempt at learning to use jest to create automated tests and code the javascript to pass each test.
 
 |specs|example input|example output|
 |-|-|-|
@@ -22,17 +22,17 @@
 
 ## Setup/Installation Requirements
 
-1. 
-2. 
-3. 
-4. 
-5. 
+1. clone the repo
+2. open the command line in the repo's root directory
+3. run npm install
+4. run npm test
 
 ## Technologies Used
 
-* 
-* 
-* 
+* webpack
+* node
+* jest
+* javascript
 
 ### License
 
